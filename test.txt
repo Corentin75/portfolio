@@ -24,3 +24,47 @@ TVS
 Sculptures
 MLK
 Voiture
+
+
+        <!-- Skills -->
+        <section id="skills" class="space-y-6 pt-4">
+            <h2 class="text-4xl font-bold text- pb-4">Compétences acquises</h2>
+            <div class="flex flex-wrap gap-3">
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    Unity
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    Unreal Engine
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    C#
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    C++
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    3Ds Max
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    Git
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    HTML
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    CSS
+                </span>
+                <span
+                    class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                    JavaScript
+                </span>
+            </div>
+        </section>
