@@ -14,26 +14,271 @@
 <body class="bg-gradient-to-b from-[#321174] to-[#1E1E2E] text-[#F4F4F4]"
     style="font-family: 'Montserrat', sans-serif;">
 
+    <!-- Fixed left nav -->
+    <nav
+        class="fixed top-1/2 left-8 w-56 -translate-y-1/2 bg-black bg-opacity-30 border border-[#893C99] rounded-2xl shadow-xl py-4 px-4 backdrop-blur-sm">
+        <ul class="flex flex-col space-y-1">
+            <li>
+                <a href="#context"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Contexte
+                </a>
+            </li>
+            <li>
+                <a href="#steps"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Étapes
+                </a>
+            </li>
+            <li>
+                <a href="#tools"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Outils
+                </a>
+            </li>
+            <li>
+                <a href="#missions"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Missions
+                </a>
+            </li>
+            <li>
+                <a href="#skills"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Compétences
+                </a>
+            </li>
+            <li>
+                <a href="#conclusion"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Conclusion
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
     <!-- Header -->
     <header class="bg-[#1E1E2E] text-[#F4F4F4] border-b-2 border-[#893C99] shadow-md top-0 w-full z-50">
         <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
             <div class="text-3xl font-bold">Corentin Detournay</div> <!-- Increased font size here -->
             <ul class="flex gap-8 text-lg font-semibold">
                 <li><a href="../index.html#top" class="hover:text-[#893C99] transition duration-300">Accueil</a></li>
-                <li><a href="../index.html#projects" class="hover:text-[#893C99] transition duration-300">Projets</a></li>
-                <li><a href="../index.html#skills" class="hover:text-[#893C99] transition duration-300">Compétences</a></li>
+                <li><a href="../index.html#projects" class="hover:text-[#893C99] transition duration-300">Projets</a>
+                </li>
                 <li><a href="../index.html#resume" class="hover:text-[#893C99] transition duration-300">CV</a></li>
-                <li><a href="../index.html#contact" class="hover:text-[#893C99] transition duration-300">Contact</a></li>
+                <li><a href="../index.html#contact" class="hover:text-[#893C99] transition duration-300">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
-    
 
-    <main class="pt-12 max-w-6xl mx-auto px-4 space-y-20">
 
-        <!-- CONTENT TODO -->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <main class="pt-12 px-4 max-w-6xl mx-auto space-y-16">
+        <!-- Page Title -->
+        <div>
+            <h1 class="text-5xl font-bold text-center pb-8">Museum Paint</h1>
+            <h1 class="text-3xl font-bold text-center border-b-4 border-[#893C99] pb-8">
+                Comment créer un jeu vidéo qui soit accessible en réalité virtuelle ?
+            </h1>
+        </div>
 
+        <!-- Illustration principale -->
+        <figure class="w-full rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+            <img src="../images/project2/game_icon.png" alt="Illustration du projet" class="w-full" />
+            <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                Aperçu de l'environnement du jeu
+            </figcaption>
+        </figure>
+
+
+        <!-- Texte structuré -->
+        <article class="space-y-12 text-lg">
+            <!-- Contexte et problématique -->
+            <section id="context" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Contexte &
+                    objectifs</h3>
+                <p>
+                    Dans le cadre d’une deuxième année de BUT informatique, l’objectif était de réaliser un jeu
+                    vidéo où le but pour le joueur est de peindre une statue qui possède une texture transparente afin
+                    de la révéler. Pour cela il pourra projeter de la peinture ou autre matière qui viendra colorer la
+                    surface de la statue, de manière plus ou moins permanente.
+                </p><br>
+                <p>
+                    La spécificité de ce jeu est qu'il fut à réaliser en VR ! Cela a ainsi demandé une toute autre
+                    approche à l'équipe pour développer ce jeu vidéo, toutes les parties du jeu s'en sont vues
+                    influencer. En effet, la programmation du jeu était différente avec par exemple la caméra qui
+                    suivait le casque virtuel, ou les manettes permettant l'interaction dans le jeu.
+                </p><br>
+                <p>
+                    Ce jeu raconte comment un peintre a été contacté par un musée pour venir à leur aide afin de
+                    retrouver leurs statues qui ont miraculeusement disparues. Le joueur peut donc, à l'aide de divers
+                    outils et peinture, faire retrouver vie à ces statues.
+                </p>
+            </section>
+
+            <!-- Étapes clés -->
+            <section id="steps" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Étapes clés</h3>
+                <ul class="list-disc list-inside">
+                    <li>Définition du scénario et de l'environnement du jeu</li>
+                    <li>Configuration du matériel de VR</li>
+                    <li>Modélisation des éléments du jeu</li>
+                    <li>Programmation des fonctionnalités</li>
+                    <li>Tests du jeu en conditions réelles</li>
+                    <li>Préparation d'une soutenance sur le projet</li>
+                </ul>
+            </section>
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- First image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                    <img src="../images/project2/shop_menu.png" alt="Illustration du projet" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du magasin présent dans le jeu permettant de faire des achats
+                    </figcaption>
+                </figure>
+
+                <!-- Second image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                    <img src="../images/project2/shop_canva.png" alt="Deuxième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du logiciel Canva ayant permis la création d'éléments visuels
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Outils utilisés -->
+            <section id="tools" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Outils utilisés
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Unity
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Meta Quest Link
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        GitHub
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Visual Studio
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Blender
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Canva
+                    </span>
+                </div>
+            </section>
+
+            <!-- Missions principales -->
+            <section id="missions" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Missions
+                    personnelles</h3>
+                <ul class="list-disc list-inside">
+                    <li>Réalisation de l'ensemble de l'UI du jeu
+                        <ul class="list-decimal list-inside ml-4">
+                            <li>Un magasin permettant l'achat d'outils et peintures</li>
+                            <li>Un menu de lancement d'une partie</li>
+                            <li>Un menu de sélection d'une statue</li>
+                        </ul>
+                    </li>
+                    <li>Aide à la programmation du magasin du jeu</li>
+                    <li>Préparation d'une soutenance de présentation du projet</li>
+                    <li>Création d'un teaser de présentation du jeu</li>
+                </ul>
+            </section>
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- First image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                    <img src="../images/project2/money_UI.png" alt="Illustration du projet" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu de l'overlay d'affichage de l'argent du joueur sur sa caméra VR
+                    </figcaption>
+                </figure>
+
+                <!-- Second image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                    <img src="../images/project2/money_script.png" alt="Deuxième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du script permettant la gestion de l'argent dans le jeu
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Apports en compétences -->
+            <section id="skills" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Compétences
+                    mobilisées</h3>
+                <ul class="list-disc list-inside">
+                    <li>
+                        <span class="font-semibold">Techniques :</span>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Développement en réalité virtuelle</li>
+                            <li>Programmation de jeux vidéo</li>
+                            <li>Modélisation 3D</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="font-semibold">Transversales :</span>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Travail en équipe</li>
+                            <li>Gestion d'un cahier des charges</li>
+                            <li>Gestion d'un rétroplanning</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="font-semibold">Humaines :</span>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Communication</li>
+                            <li>Autonomie</li>
+                            <li>Détermination</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- Conclusion réflexive -->
+            <section id="conclusion" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Conclusion</h3>
+                <p>
+                    Pour conclure, Museum Paint fut un jeu qui a permis de notamment développer ses compétences et
+                    connaissances en réalité virtuelle.
+                </p><br>
+                <p>
+                    Les objectifs poursuivis ont été atteint, malgré de nombreuses difficultés rencontrées, notamment
+                    sur la mise en place du matériel de VR, sa liaison dans le jeu, et les interactions qu'il propose
+                    dans le jeu. De plus, étant en équipe de huit personnes, le projet fut très difficile à gérer et
+                    organiser, et il y a eu de nombreux moments de "vide" où une personne ou une autre ne savait pas
+                    comment avancer.
+                </p><br>
+                <p>
+                    L'expérience en elle-même en réalité virtuelle n'en ressort que positive malgré tout, conférant une
+                    expérience concrète dans le domaine de la VR, domaine qui est de plus en plus recherché par les
+                    recruteurs de game developers.
+                </p>
+            </section>
+
+            <!-- Lien vers le projet -->
+            <section id="project-link" class="pb-16 pt-4">
+                <a href="https://lien-vers-mon-projet.com" target="_blank"
+                    class="inline-block bg-[#893C99] hover:bg-[#A45AA5] text-[#F4F4F4] px-8 py-4 rounded-full font-bold text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                    Voir le projet finalisé&ThickSpace;&ThickSpace;&ThickSpace;<i
+                        class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+            </section>
+        </article>
     </main>
 
 
@@ -77,7 +322,7 @@
 
 
     <button id="backToTopBtn"
-        class="fixed bottom-10 right-10 bg-[#893C99] text-white p-5 rounded-full shadow-xl hover:bg-[#A45AA5] hover:scale-110 z-50 opacity-0 pointer-events-none transition-opacity transition-transform transform duration-300 ease-in-out"
+        class="fixed bottom-10 right-10 bg-[#893C99] text-[#F4F4F4] p-5 rounded-full shadow-xl hover:bg-[#A45AA5] hover:scale-110 z-50 opacity-0 pointer-events-none transition-opacity transition-transform transform duration-300 ease-in-out"
         aria-label="Retour en haut">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
             stroke-width="2">
