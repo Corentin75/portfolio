@@ -132,7 +132,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/shop_menu.png')">
                     <img src="../images/project2/shop_menu.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du magasin présent dans le jeu permettant de faire des achats
@@ -140,7 +141,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/shop_canva.png')">
                     <img src="../images/project2/shop_canva.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du logiciel Canva ayant permis la création d'éléments visuels
@@ -200,7 +202,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/money_UI.png')">
                     <img src="../images/project2/money_UI.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu de l'overlay d'affichage de l'argent du joueur sur sa caméra VR
@@ -208,7 +211,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/money_script.png')">
                     <img src="../images/project2/money_script.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du script permettant la gestion de l'argent dans le jeu
@@ -330,6 +334,15 @@
         </svg>
     </button>
 
+
+
+    <!-- Modal Overlay -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div id="modalBackdrop" class="absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative z-10">
+            <img id="modalImage" class="max-w-[90vw] max-h-[80vh] rounded-xl shadow-2xl border-4 border-[#893C99]" />
+        </div>
+    </div>
 
     <script src="../js/script.js"></script>
 </body>

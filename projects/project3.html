@@ -133,7 +133,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/temple_before.png')">
                     <img src="../images/project3/temple_before.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du modèle 3D du temple original
@@ -141,7 +142,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/temple_after.png')">
                     <img src="../images/project3/temple_after.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du modèle 3D du temple après remodélisation
@@ -198,7 +200,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/embrace_model.png')">
                     <img src="../images/project3/embrace_model.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu de la statue "The Embrace" après modélisation 3D
@@ -206,7 +209,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/embrace_final.png')">
                     <img src="../images/project3/embrace_final.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu de la statue "The Embrace" après application des textures
@@ -216,7 +220,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- Troisième image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/embrace_materials.png')">
                     <img src="../images/project3/embrace_materials.png" alt="Troisième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du logiciel Substance 3D qui m'a permis de créer des matériaux
@@ -224,7 +229,8 @@
                 </figure>
 
                 <!-- Quatrième image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/embrace_textures.png')">
                     <img src="../images/project3/embrace_textures.png" alt="Quatrième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du logiciel Substance qui m'a permis de récupérer des textures
@@ -266,7 +272,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/cinema_before.png')">
                     <div class="h-80 overflow-y-scroll">
                         <img src="../images/project3/cinema_before.png" alt="Illustration du projet" class="w-full" />
                     </div>
@@ -276,10 +283,11 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
-                    <a href="https://www.youtube.com/watch?v=YZoxy-PRbIw" target="_blank">
-                        <img src="../images/project3/cinema_after.png" alt="Watch on YouTube" class="w-full" />
-                    </a>
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project3/cinema_after.png')">
+                    <div class="h-80 overflow-y-scroll">
+                        <img src="../images/project3/cinema_after.png" alt="Illustration du projet" class="w-full" />
+                    </div>
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du niveau "cinéma" après texturage dans Substance
                     </figcaption>
@@ -364,6 +372,15 @@
         </svg>
     </button>
 
+
+
+    <!-- Modal Overlay -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div id="modalBackdrop" class="absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative z-10">
+            <img id="modalImage" class="max-w-[90vw] max-h-[80vh] rounded-xl shadow-2xl border-4 border-[#893C99]" />
+        </div>
+    </div>
 
     <script src="../js/script.js"></script>
 </body>

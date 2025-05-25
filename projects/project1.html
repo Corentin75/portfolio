@@ -138,7 +138,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project1/stats_ui.png')">
                     <img src="../images/project1/stats_ui.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu de l'interface principale du jeu en pleine partie
@@ -146,7 +147,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project1/stats_code.png')">
                     <img src="../images/project1/stats_code.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du logiciel Visual Studio que j'ai utilisé pour la programmation
@@ -204,7 +206,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project1/ui_menu.png')">
                     <img src="../images/project1/ui_menu.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu d'une interface d'un menu implémenté dans le jeu
@@ -212,7 +215,8 @@
                 </figure>
 
                 <!-- Second image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project1/ui_canva.png')">
                     <img src="../images/project1/ui_canva.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
                         Aperçu du logiciel Canva où j'ai pu réaliser divers éléments d'UI du jeu
@@ -254,7 +258,8 @@
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
-                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project1/PosterImg.png')">
                     <div class="h-80 overflow-y-scroll">
                         <img src="../images/project1/PosterImg.png" alt="Illustration du projet" class="w-full" />
                     </div>
@@ -356,6 +361,15 @@
         </svg>
     </button>
 
+
+
+    <!-- Modal Overlay -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div id="modalBackdrop" class="absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative z-10">
+            <img id="modalImage" class="max-w-[90vw] max-h-[80vh] rounded-xl shadow-2xl border-4 border-[#893C99]" />
+        </div>
+    </div>
 
     <script src="../js/script.js"></script>
 </body>
