@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Projet 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-[#321174] to-[#1E1E2E] text-[#F4F4F4]"
+    style="font-family: 'Montserrat', sans-serif;">
+
+    <!-- Fixed left nav -->
+    <nav
+        class="fixed top-1/2 left-8 w-56 -translate-y-1/2 bg-black bg-opacity-30 border border-[#893C99] rounded-2xl shadow-xl py-4 px-4 backdrop-blur-sm">
+        <ul class="flex flex-col space-y-1">
+            <li>
+                <a href="#context"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Contexte
+                </a>
+            </li>
+            <li>
+                <a href="#steps"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Étapes
+                </a>
+            </li>
+            <li>
+                <a href="#tools"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Outils
+                </a>
+            </li>
+            <li>
+                <a href="#skills"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Compétences
+                </a>
+            </li>
+            <li>
+                <a href="#conclusion"
+                    class="block text-[#F4F4F4] font-semibold text-xl rounded-lg px-5 py-3 hover:bg-[#893C99] hover:text-white transition duration-300">
+                    Conclusion
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="bg-[#1E1E2E] text-[#F4F4F4] border-b-2 border-[#893C99] shadow-md top-0 w-full z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="text-3xl font-bold">Corentin Detournay</div> <!-- Increased font size here -->
+            <ul class="flex gap-8 text-lg font-semibold">
+                <li><a href="../index.html#top" class="hover:text-[#893C99] transition duration-300">Accueil</a></li>
+                <li><a href="../index.html#projects" class="hover:text-[#893C99] transition duration-300">Projets</a>
+                </li>
+                <li><a href="../index.html#resume" class="hover:text-[#893C99] transition duration-300">CV</a></li>
+                <li><a href="../index.html#contact" class="hover:text-[#893C99] transition duration-300">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="pt-12 px-4 max-w-6xl mx-auto space-y-16">
+        <!-- Page Title -->
+        <div>
+            <h1 class="text-5xl font-bold text-center pb-8">Veggie Rush</h1>
+            <!-- <h1 class="text-3xl font-bold text-center border-b-4 border-[#893C99] pb-8">
+                Comment faire du jeu vidéo un outil accessible et éco-responsable ?
+            </h1> -->
+        </div>
+
+        <!-- Illustration principale -->
+        <figure class="w-full rounded-xl shadow-xl bg-[#893C99] overflow-hidden">
+            <img src="../images/project5/game_icon.png" alt="Illustration du projet" class="w-full" />
+            <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                Aperçu de l'environnement du jeu
+            </figcaption>
+        </figure>
+
+
+        <!-- Texte structuré -->
+        <article class="space-y-12 text-lg">
+            <!-- Contexte et problématique -->
+            <section id="context" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Contexte &
+                    objectifs</h3>
+                <p>
+                    Dans le cadre d’une troisième année de BUT informatique, l’objectif de ce projet était de créer
+                    un jeu simple de simulation d'agriculture en complète autonomie et de A à Z.
+                </p><br>
+                <p>
+                    Dans ce projet, le joueur contrôle un drone au-dessus d'un potager et y plante des graines, en
+                    récolte des légumes mûrs, et cela dans l'objectif d'atteindre un score cible avant la fin du temps
+                    imparti. Chaque type de graine possède un temps de croissance, un score à attribuer à
+                    la récolte... différents, mais si le joueur ne récolte pas le légume dans un certain laps de temps,
+                    le légume explosera et lui fera perdre des points !
+                </p>
+            </section>
+
+            <!-- Étapes clés -->
+            <section id="steps" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Étapes clés</h3>
+                <ul class="list-disc list-inside">
+                    <li>Création du drone joueur et de ses contrôles</li>
+                    <li>Implémentation du système de plantation</li>
+                    <li>Mise en place de la mécanique de gestion du temps</li>
+                    <li>Création des interfaces utilisateur du jeu</li>
+                    <li>Implémentation d'éléments de polishing au jeu = juiciness</li>
+                </ul>
+            </section>
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- First image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project5/startMenu.png')">
+                    <img src="../images/project5/startMenu.png" alt="Illustration du projet" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du menu principal du jeu
+                    </figcaption>
+                </figure>
+
+                <!-- Second image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project5/helpMenu.png')">
+                    <img src="../images/project5/helpMenu.png" alt="Deuxième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu d'un menu d'aide du jeu
+                    </figcaption>
+                </figure>
+            </div>
+
+
+            <!-- Outils utilisés -->
+            <section id="tools" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Outils utilisés
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Unity
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        GitHub
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Visual Studio
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        3Ds Max
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Canva
+                    </span>
+                </div>
+            </section>
+
+
+            <!-- Apports en compétences -->
+            <section id="skills" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Compétences
+                    mobilisées</h3>
+                <ul class="list-disc list-inside">
+                    <li>
+                        <span class="font-semibold">Techniques :</span>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Programmation de jeux vidéo</li>
+                            <li>Gestion d'un cahier des charges</li>
+                            <li>Gestion d'un rétroplanning</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="font-semibold">Humaines :</span>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Autonomie</li>
+                            <li>Entraide</li>
+                            <li>Minutie</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- First image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project5/droneMovement_code.png')">
+                    <img src="../images/project5/droneMovement_code.png" alt="Illustration du projet" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du code gérant les mouvements du joueur / drone
+                    </figcaption>
+                </figure>
+
+                <!-- Second image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project5/plantData_code.png')">
+                    <img src="../images/project5/plantData_code.png" alt="Deuxième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du code permettant la croissance d'une graine en légume
+                    </figcaption>
+                </figure>
+            </div>
+
+
+            <!-- Conclusion réflexive -->
+            <section id="conclusion" class="pt-4">
+                <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Conclusion</h3>
+                <p>
+                    Pour conclure, Veggie Rush a été une très bonne expérience de développement de jeux vidéo dans
+                    Unity. Le sujet était d'une part intéressant et original. D'autre part, c'était le premier projet de
+                    développement d'un jeu vidéo que je réalisais seul. Cette autonomie m'a alors permis de toucher à
+                    tous les aspects du développement d'un jeu vidéo : programmation, réalisation d'interfaces,
+                    implémentation d'effets sonores, visuels... C'est d'ailleurs cette polyvalence qui m'a grandement
+                    plu en créant ce jeu et m'a déterminé à le rendre le mieux possible !
+                </p>
+            </section>
+
+            <!-- Lien vers le projet -->
+            <section id="project-link" class="pb-16 pt-4">
+                <a href="https://corentin75.itch.io/veggie-rush" target="_blank"
+                    class="inline-block bg-[#893C99] hover:bg-[#A45AA5] text-[#F4F4F4] px-8 py-4 rounded-full font-bold text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                    Voir le projet finalisé&ThickSpace;&ThickSpace;&ThickSpace;<i
+                        class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+            </section>
+        </article>
+    </main>
+
+
+    <!-- Contact footer -->
+    <footer id="contact"
+        class="bg-[#1E1E2E] border-t-2 border-[#893C99] pt-8 pb-8 text-lg text-center text-[#F4F4F4] w-full space-y-4">
+        <p class="font-semibold">&copy; Corentin Detournay - 2025</p>
+
+        <!-- Icons row -->
+        <div class="flex justify-center items-center gap-8">
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/corentin-detournay/" target="_blank"
+                class="hover:text-[#893C99] transition flex items-center justify-center" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="-1 0 24 24">
+                    <path
+                        d="M4.98 3.5C4.98 4.6 4.07 5.5 2.97 5.5S.96 4.6.96 3.5 1.87 1.5 2.97 1.5s2.01.9 2.01 2zm.02 4H.96V24h4.04V7.5zm7.18 0H8.14V24h4.04v-8.21c0-2.08.75-3.5 2.63-3.5 1.57 0 2.5 1.06 2.5 2.61V24h4.04v-8.81c0-4.7-2.51-6.89-5.87-6.89-2.75 0-3.97 1.53-4.65 2.61h.03V7.5z" />
+                </svg>
+            </a>
+
+            <!-- Email Icon (Envelope) -->
+            <a href="mailto:corentindetournay05@gmail.com"
+                class="hover:text-[#893C99] transition flex items-center justify-center" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 22"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 8l9 6 9-6M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
+                </svg>
+            </a>
+
+            <!-- GitHub Icon -->
+            <a href="https://github.com/Corentin75" target="_blank"
+                class="hover:text-[#893C99] transition flex items-center justify-center" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.373 0 12a12.002 12.002 0 008.21 11.385c.6.113.82-.263.82-.583v-2.234c-3.338.728-4.043-1.416-4.043-1.416-.546-1.386-1.333-1.755-1.333-1.755-1.09-.745.082-.73.082-.73 1.205.086 1.84 1.24 1.84 1.24 1.07 1.835 2.807 1.305 3.492.997.107-.774.418-1.305.76-1.604-2.665-.306-5.467-1.332-5.467-5.932 0-1.31.467-2.38 1.235-3.22-.124-.305-.535-1.533.117-3.194 0 0 1.008-.322 3.3 1.23a11.49 11.49 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.66.242 2.89.118 3.194.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.92.43.372.823 1.103.823 2.222v3.293c0 .323.22.698.825.58A12.005 12.005 0 0024 12c0-6.627-5.373-12-12-12z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+
+    <button id="backToTopBtn"
+        class="fixed bottom-10 right-10 bg-[#893C99] text-[#F4F4F4] p-5 rounded-full shadow-xl hover:bg-[#A45AA5] hover:scale-110 z-50 opacity-0 pointer-events-none transition-opacity transition-transform transform duration-300 ease-in-out"
+        aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+
+
+    <!-- Modal Overlay -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div id="modalBackdrop" class="absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative z-10">
+            <img id="modalImage" class="max-w-[90vw] max-h-[80vh] rounded-xl shadow-2xl border-4 border-[#893C99]" />
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
