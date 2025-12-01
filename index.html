@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Accueil</title>
+    <title>Corentin Detournay - Accueil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-gradient-to-b from-[#321174] to-[#1E1E2E] text-[#F4F4F4]"
@@ -17,8 +18,8 @@
     <!-- Header -->
     <header class="bg-[#1E1E2E] text-[#F4F4F4] border-b-2 border-[#893C99] shadow-md top-0 w-full z-50">
         <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-            <div class="text-3xl font-bold">Corentin Detournay</div> <!-- Increased font size here -->
-            <ul class="flex gap-8 text-lg font-semibold"> <!-- Increased font size and boldness -->
+            <div class="text-3xl font-bold">Corentin Detournay</div>
+            <ul class="flex gap-8 text-lg font-semibold">
                 <li><a href="#top" class="hover:text-[#893C99] transition duration-300">Accueil</a></li>
                 <li><a href="#projects" class="hover:text-[#893C99] transition duration-300">Projets</a></li>
                 <li><a href="#resume" class="hover:text-[#893C99] transition duration-300">CV</a></li>
@@ -38,14 +39,19 @@
 
                 <!-- Text Content -->
                 <div class="text-xl text-[#E2E2E2] leading-relaxed md:flex-1">
+                    <div class="flex items-end pb-6">
+                        <p class="font-semibold text-3xl">
+                            Game developer&ThickSpace;&ThickSpace;
+                        </p>
+                        <p class="text-2xl">
+                            en formation
+                        </p>
+                    </div>
                     <p>
                         Passionné d'informatique et de jeux vidéo, j’ai choisi de me spécialiser en développement de
-                        jeux vidéo,
-                        un domaine qui allie parfaitement mes intérêts. Ma formation en informatique graphique m’a
-                        offert une
-                        immersion approfondie dans les différentes missions d’un game developer, renforçant ainsi ma
-                        motivation
-                        et ma détermination à exceller dans le métier.
+                        jeux vidéo, un domaine qui allie parfaitement mes intérêts. Les différents projets que j'ai pu
+                        réaliser m'ont offert une immersion approfondie dans les différentes missions d’un game
+                        developer, renforçant ainsi ma motivation et ma détermination à exceller dans le métier.
                     </p>
                 </div>
             </div>
@@ -55,8 +61,8 @@
 
         <!-- Projects Mosaic -->
         <section id="projects" class="space-y-6 pt-4">
-            <h2 class="text-4xl font-bold text-[#F4F4F4] pb-4">Projets réalisés</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <h2 class="text-4xl font-bold text-[#F4F4F4] border-b-4 border-[#893C99] pb-4 mb-6">Projets réalisés</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 pt-4">
                 <a href="projects/project1.html"
                     class="block bg-[#893C99] rounded shadow hover:shadow-lg transition hover:scale-[1.02] hover:bg-[#A45AA5]">
                     <img src="images/project1/game_icon.png" alt="Projet 1"
@@ -108,7 +114,7 @@
 
 
         <!-- CV section -->
-        <section id="resume" class="space-y-4 pt-4 pb-20">
+        <!-- <section id="resume" class="space-y-4 pt-4 pb-20">
             <h2 class="text-3xl font-bold text-[#F4F4F4] pb-4">Mon CV !</h2>
             <div class="flex flex-wrap gap-8 items-center">
                 <div class="flex-1 max-w-xs">
@@ -123,6 +129,59 @@
                         class="bg-[#893C99] text-[#F4F4F4] px-6 py-3 rounded-full font-semibold hover:bg-[#A45AA5] transition duration-300 ease-in-out w-full text-center flex items-center justify-center gap-2">
                         <i class="fas fa-download fa-lg"></i>&MediumSpace;Télécharger
                     </a>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="skills" class="pb-20 pt-4">
+            <h2 class="text-4xl font-bold text-[#F4F4F4] border-b-4 border-[#893C99] pb-4 mb-6">
+                Compétences acquises
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto pt-4">
+                <!-- Techniques -->
+                <div
+                    class="bg-[#893C99] rounded-2xl shadow-md p-8 transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-4 font-raleway">
+                        ⚙️ Techniques
+                    </h3>
+                    <ul class="list-disc list-inside text-left space-y-2">
+                        <li>Programmation de gameplay</li>
+                        <li>Réalisation d'interfaces</li>
+                        <li>Modélisation 3D</li>
+                        <li>Texturage d'objets</li>
+                        <li>Développement en réalité virtuelle</li>
+                        <li>Adoption d'une démarche éco-responsable</li>
+                    </ul>
+                </div>
+
+                <!-- Transversales -->
+                <div
+                    class="bg-[#893C99] rounded-2xl shadow-md p-8 transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-4 font-raleway">
+                        📊 Transversales
+                    </h3>
+                    <ul class="list-disc list-inside text-left space-y-2">
+                        <li>Travail en équipe</li>
+                        <li>Polyvalence des tâches</li>
+                        <li>Coordination de projet</li>
+                        <li>Gestion d’un cahier des charges</li>
+                        <li>Respect d’un rétroplanning</li>
+                    </ul>
+                </div>
+
+                <!-- Humaines -->
+                <div
+                    class="bg-[#893C99] rounded-2xl shadow-md p-8 transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-4 font-raleway">
+                        💬 Humaines
+                    </h3>
+                    <ul class="list-disc list-inside text-left space-y-2">
+                        <li>Communication</li>
+                        <li>Autonomie</li>
+                        <li>Esprit critique</li>
+                        <li>Détermination</li>
+                    </ul>
                 </div>
             </div>
         </section>
