@@ -77,9 +77,9 @@
     <main class="pt-12 px-4 max-w-6xl mx-auto space-y-16">
         <!-- Page Title -->
         <div>
-            <h1 class="text-5xl font-bold text-center pb-8">Museum Paint</h1>
+            <h1 class="text-5xl font-bold text-center pb-8">Voices of Freedom</h1>
             <h1 class="text-3xl font-bold text-center border-b-4 border-[#893C99] pb-8">
-                Comment créer un jeu vidéo qui soit accessible en réalité virtuelle ?
+                Le combat de Martin Luther King Jr. retracé dans un jeu de simulation
             </h1>
         </div>
 
@@ -99,21 +99,22 @@
                 <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Contexte &
                     objectifs</h3>
                 <p>
-                    Dans le cadre d’une deuxième année de BUT informatique, l’objectif était de réaliser un jeu
-                    vidéo où le but pour le joueur est de peindre une statue qui possède une texture transparente afin
-                    de la révéler. Pour cela il pourra projeter de la peinture ou autre matière qui viendra colorer la
-                    surface de la statue, de manière plus ou moins permanente.
+                    Au cours d'une première année de BUT informatique, l’objectif était de réaliser un jeu
+                    vidéo sur le moteur de jeu Unreal Engine retraçant le combat mené par Martin Luther King Jr.
                 </p><br>
                 <p>
-                    La spécificité de ce jeu est qu'il fut à réaliser en VR ! Cela a ainsi demandé une toute autre
-                    approche à l'équipe pour développer ce jeu vidéo, toutes les parties du jeu s'en sont vues
-                    influencées. En effet, la programmation du jeu était différente avec par exemple la caméra qui
-                    suivait le casque virtuel, ou les manettes permettant l'interaction dans le jeu.
+                    Ce jeu vidéo fut une première expérience concrète en développement de jeux vidéo, et a permis
+                    de toucher du doigt de nombreux domaines du jeu vidéo, que ce soit de la modélisation 3D, du
+                    texturage d'objets, de la programmation, mais surtout de l'organisation au vu de l'ampleur du
+                    projet.
                 </p><br>
                 <p>
-                    Ce jeu raconte comment un peintre a été contacté par un musée pour venir à leur aide afin de
-                    retrouver leurs statues qui ont miraculeusement disparues. Le joueur peut donc, à l'aide de divers
-                    outils et peintures, faire retrouver vie à ces statues.
+                    Il a été convenu que ce jeu permettrait d'instruire son utilisateur par différents contenus
+                    textuels, visuels, et interactifs. En effet, le joueur, au sein d'un temple aménagé comme musée,
+                    pourrait y découvrir toutes sortes de documents en lien avec le combat de MLK, mais aussi des
+                    statues en 3D contre la ségrégation raciale, ou même des discours et vidéos à visionner dans le
+                    jeu. De plus, l'utilisateur a accès à plusieurs simulations lui permettant de s'immerger directement
+                    au sein de scènes cultes du combat contre la ségrégation raciale aux États-Unis.
                 </p>
             </section>
 
@@ -121,31 +122,31 @@
             <section id="steps" class="pt-4">
                 <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Étapes clés</h3>
                 <ul class="list-disc list-inside">
-                    <li>Définition du scénario et de l'environnement du jeu</li>
-                    <li>Configuration du matériel de VR</li>
-                    <li>Modélisation des éléments du jeu</li>
-                    <li>Programmation des fonctionnalités</li>
-                    <li>Tests du jeu en conditions réelles</li>
-                    <li>Préparation d'une soutenance sur le projet</li>
+                    <li>Définition du thème et de l'univers du jeu</li>
+                    <li>Création de la structure principale : le temple</li>
+                    <li>Modélisation des autres éléments de la map</li>
+                    <li>Programmation d'un joueur mobile et ses interactions</li>
+                    <li>Optimisation des modèles 3D du jeu et de leurs textures</li>
+                    <li>Préparation d'une soutenance concernant le projet</li>
                 </ul>
             </section>
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
                 <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
-                    onclick="openModal('../images/project2/shop_menu.png')">
-                    <img src="../images/project2/shop_menu.png" alt="Illustration du projet" class="w-full" />
+                    onclick="openModal('../images/project2/temple_before.png')">
+                    <img src="../images/project2/temple_before.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
-                        Aperçu du magasin présent dans le jeu permettant de faire des achats
+                        Aperçu du modèle 3D du temple original
                     </figcaption>
                 </figure>
 
                 <!-- Second image -->
                 <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
-                    onclick="openModal('../images/project2/shop_canva.png')">
-                    <img src="../images/project2/shop_canva.png" alt="Deuxième illustration" class="w-full" />
+                    onclick="openModal('../images/project2/temple_after.png')">
+                    <img src="../images/project2/temple_after.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
-                        Aperçu du logiciel Canva ayant permis la création d'éléments visuels
+                        Aperçu du modèle 3D du temple après remodélisation
                     </figcaption>
                 </figure>
             </div>
@@ -157,11 +158,7 @@
                 <div class="flex flex-wrap gap-3">
                     <span
                         class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
-                        Unity
-                    </span>
-                    <span
-                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
-                        Meta Quest Link
+                        Unreal Engine
                     </span>
                     <span
                         class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
@@ -173,7 +170,11 @@
                     </span>
                     <span
                         class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
-                        Blender
+                        3Ds Max
+                    </span>
+                    <span
+                        class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
+                        Substance 3D
                     </span>
                     <span
                         class="border border-[#893C99] rounded-full px-3 py-1 text-lg font-medium text-[#F4F4F4] bg-[#893C99] hover:bg-[#A45AA5] transition">
@@ -187,35 +188,52 @@
                 <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Missions
                     personnelles</h3>
                 <ul class="list-disc list-inside">
-                    <li>Réalisation de l'ensemble de l'UI du jeu
-                        <ul class="list-decimal list-inside ml-4">
-                            <li>Un magasin permettant l'achat d'outils et peintures</li>
-                            <li>Un menu de lancement d'une partie</li>
-                            <li>Un menu de sélection d'une statue</li>
-                        </ul>
-                    </li>
-                    <li>Aide à la programmation du magasin du jeu</li>
+                    <li>Remodélisation du temple pour qu'il convienne aux besoins du jeu</li>
+                    <li>Modélisation 3D et texturage de la statue "The Embrace"</li>
+                    <li>Travail sur une salle exposant différents moments du discours de MLK "I have a dream"</li>
+                    <li>Création du niveau "cinéma" où le joueur peut y visionner un extrait du film "Selma"</li>
+                    <li>Création d'un environnement immersif autour du musée</li>
+                    <li>Participation à la création d'un des niveaux de simulation : le stade des JO de 1968</li>
                     <li>Préparation d'une soutenance de présentation du projet</li>
-                    <li>Création d'un teaser de présentation du jeu</li>
                 </ul>
             </section>
 
             <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
                 <!-- First image -->
                 <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
-                    onclick="openModal('../images/project2/money_UI.png')">
-                    <img src="../images/project2/money_UI.png" alt="Illustration du projet" class="w-full" />
+                    onclick="openModal('../images/project2/embrace_model.png')">
+                    <img src="../images/project2/embrace_model.png" alt="Illustration du projet" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
-                        Aperçu de l'overlay d'affichage de l'argent du joueur sur sa caméra VR
+                        Aperçu de la statue "The Embrace" après modélisation 3D
                     </figcaption>
                 </figure>
 
                 <!-- Second image -->
                 <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
-                    onclick="openModal('../images/project2/money_script.png')">
-                    <img src="../images/project2/money_script.png" alt="Deuxième illustration" class="w-full" />
+                    onclick="openModal('../images/project2/embrace_final.png')">
+                    <img src="../images/project2/embrace_final.png" alt="Deuxième illustration" class="w-full" />
                     <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
-                        Aperçu du script permettant la gestion de l'argent dans le jeu
+                        Aperçu de la statue "The Embrace" après application des textures
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- Troisième image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/embrace_materials.png')">
+                    <img src="../images/project2/embrace_materials.png" alt="Troisième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du logiciel Substance 3D qui m'a permis de créer des matériaux
+                    </figcaption>
+                </figure>
+
+                <!-- Quatrième image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/embrace_textures.png')">
+                    <img src="../images/project2/embrace_textures.png" alt="Quatrième illustration" class="w-full" />
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du logiciel Substance qui m'a permis de récupérer des textures
                     </figcaption>
                 </figure>
             </div>
@@ -228,15 +246,15 @@
                     <li>
                         <span class="font-semibold">Techniques :</span>
                         <ul class="list-disc list-inside ml-6">
-                            <li>Développement en réalité virtuelle</li>
                             <li>Programmation de jeux vidéo</li>
                             <li>Modélisation 3D</li>
+                            <li>Texturage d'objets</li>
                         </ul>
                     </li>
                     <li>
                         <span class="font-semibold">Transversales :</span>
                         <ul class="list-disc list-inside ml-6">
-                            <li>Travail en équipe</li>
+                            <li>Gestion d'équipe</li>
                             <li>Gestion d'un cahier des charges</li>
                             <li>Gestion d'un rétroplanning</li>
                         </ul>
@@ -244,33 +262,52 @@
                     <li>
                         <span class="font-semibold">Humaines :</span>
                         <ul class="list-disc list-inside ml-6">
+                            <li>Polyvalence</li>
                             <li>Communication</li>
                             <li>Autonomie</li>
-                            <li>Détermination</li>
                         </ul>
                     </li>
                 </ul>
             </section>
+
+            <div class="flex flex-wrap gap-10 justify-center items-center pt-4">
+                <!-- First image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/cinema_before.png')">
+                    <div class="h-80 overflow-y-scroll">
+                        <img src="../images/project2/cinema_before.png" alt="Illustration du projet" class="w-full" />
+                    </div>
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du niveau "cinéma" avant texturage
+                    </figcaption>
+                </figure>
+
+                <!-- Second image -->
+                <figure class="w-full md:w-[45%] rounded-xl shadow-xl bg-[#893C99] overflow-hidden cursor-pointer"
+                    onclick="openModal('../images/project2/cinema_after.png')">
+                    <div class="h-80 overflow-y-scroll">
+                        <img src="../images/project2/cinema_after.png" alt="Illustration du projet" class="w-full" />
+                    </div>
+                    <figcaption class="text-center text-sm text-[#F4F4F4] italic py-1">
+                        Aperçu du niveau "cinéma" après texturage dans Substance
+                    </figcaption>
+                </figure>
+            </div>
 
 
             <!-- Conclusion réflexive -->
             <section id="conclusion" class="pt-4">
                 <h3 class="text-2xl font-semibold text-[#F4F4F4] border-b-4 border-[#893C99] pb-2 mb-6">Conclusion</h3>
                 <p>
-                    Pour conclure, Museum Paint fut un jeu qui a permis de notamment développer ses compétences et
-                    connaissances en réalité virtuelle.
+                    Pour conclure, Voices of Freedom fut une première expérience en développement de jeux vidéo qui m'a
+                    permis de découvrir ce domaine et d'en déduire mon parcours professionnel. J'ai notamment pu
+                    m'exercer en modélisation 3D et texturing mais surtout apprendre à travailler sur un long projet en
+                    équipe conséquente.
                 </p><br>
                 <p>
-                    Les objectifs poursuivis ont été atteints, malgré de nombreuses difficultés rencontrées, notamment
-                    sur la mise en place du matériel de VR, sa liaison dans le jeu, et les interactions qu'il propose
-                    dans le jeu. De plus, étant en équipe de huit personnes, le projet fut très difficile à gérer et
-                    organiser, et il y a eu de nombreux moments de "vide" où une personne ou une autre ne savait pas
-                    comment avancer.
-                </p><br>
-                <p>
-                    L'expérience en elle-même en réalité virtuelle n'en ressort que positive malgré tout, conférant une
-                    expérience concrète dans le domaine de la VR, domaine qui est de plus en plus recherché par les
-                    recruteurs de game developers.
+                    Ce jeu aura demandé un grand nombre d'heures de travail pour un résultat plutôt réussi, mais qui,
+                    avec du recul, pourrait être refait et amélioré grandement en un temps moindre. Ceci dit, tous les
+                    objectifs ont pu être réalisés dans le temps imparti et ont permis de présenter un projet complet.
                 </p>
             </section>
 
